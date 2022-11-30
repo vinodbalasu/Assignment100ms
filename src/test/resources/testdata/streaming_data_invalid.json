@@ -1,0 +1,478 @@
+[
+  {
+    "test_name" : "verify streaming api to start streaming with null operation and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": null,
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Code: 8, Message: invalid input, Debug: expected values=[start,stop]",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming with empty operation and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Code: 8, Message: invalid input, Debug: expected values=[start,stop]",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming with invalid operation and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "invalid",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Code: 8, Message: invalid input, Debug: expected values=[start,stop]",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming and later stop the same with null operation",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Beam started for room",
+        "statusCode" : 200
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": null,
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "Code: 8, Message: invalid input, Debug: expected values=[start,stop]",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming and later stop the same with empty operation",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Beam started for room",
+        "statusCode" : 200
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "Code: 8, Message: invalid input, Debug: expected values=[start,stop]",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming and later stop the same with invalid operation",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Beam started for room",
+        "statusCode" : 200
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "invalid",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "Code: 8, Message: invalid input, Debug: expected values=[start,stop]",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming and later stop the same with invalid room id",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Beam started for room",
+        "statusCode" : 200
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "invalid"
+      },
+      "response" : {
+        "response_message" : "Code: 2, Message: access to room_id unauthorized, Debug: Invalid id=invalid",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming and later stop the same with null room id",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Beam started for room",
+        "statusCode" : 200
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": null
+      },
+      "response" : {
+        "response_message" : "Code: 2, Message: access to room_id unauthorized, Debug: Invalid id=",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming and later stop the same with empty room id",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Beam started for room",
+        "statusCode" : 200
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": ""
+      },
+      "response" : {
+        "response_message" : "Code: 2, Message: access to room_id unauthorized, Debug: Invalid id=",
+        "statusCode" : 500
+      }
+    }
+  },
+
+
+  {
+    "test_name" : "verify streaming api to start streaming with null room id and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": null,
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Code: 2, Message: room inaccessible, Debug: Invalid id=",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming with empty room id and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Code: 2, Message: room inaccessible, Debug: Invalid id=",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming with invalid room id and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "invalid",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Code: 2, Message: room inaccessible, Debug: Invalid id=invalid",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  },
+
+
+  {
+    "test_name" : "verify streaming api to start streaming with null meeting url and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": null,
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "rpc error: code = InvalidArgument desc = invalid input, details = either destinations or role in browserRecording is absent",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming with empty meeting url and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "rpc error: code = InvalidArgument desc = invalid input, details = either destinations or role in browserRecording is absent",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming with invalid meeting url and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "invalid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "rpc error: code = InvalidArgument desc = invalid input, details = either destinations or role in browserRecording is absent",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  },
+
+
+  {
+    "test_name" : "verify streaming api to start streaming with empty rtmp value, record set to false and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record" : false,
+        "rtmp_urls" : []
+      },
+      "response" : {
+        "response_message" : "invalid request. no beam requested. recording=false and rtmp URL is empty",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming with invalid resolution width and recording and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record": true,
+        "rtmp_urls": [""],
+        "resolution" : {"width": 16666, "height": 720}
+      },
+      "response" : {
+        "response_message" : "Code: 11, Message: Resolution not supported, Debug: Max resolution supported is 1920x1080 or 1080x1920. Minimum resolution supported is 500x480",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming with invalid resolution height and recording and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record": true,
+        "rtmp_urls": [""],
+        "resolution" : {"width": 1920, "height": 1111}
+      },
+      "response" : {
+        "response_message" : "Code: 11, Message: Resolution not supported, Debug: Max resolution supported is 1920x1080 or 1080x1920. Minimum resolution supported is 500x480",
+        "statusCode" : 500
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "rpc error: code = NotFound desc = beam not found",
+        "statusCode" : 500
+      }
+    }
+  }
+
+]

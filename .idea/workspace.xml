@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3799300-5365-45cf-9f68-64a19ecb046f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/clients/SessionsClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/clients/StreamingClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/constants/TestGroups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/controllers/MSController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/endpoints/destinations/StreamingEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/endpoints/sessions/ListSessionsEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/endpoints/sessions/RetrieveSessionsEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/listeners/EmailReportListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/models/ExpectedResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/models/session/GetSessionErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/models/session/ListSessionsResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/models/session/PeerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/models/session/SessionResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/models/streaming/Resolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/models/streaming/StartStreaming.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/models/streaming/StopStreaming.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/models/streaming/StreamingDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/models/streaming/StreamingTestdata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/reporting/EmailReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/constants/AuthType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/constants/HttpMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/constants/HttpStatuses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/constants/RestUrlMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/entity/ApiRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/entity/Authorisation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/entity/IAPIResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/entity/IJsonSchemaValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/entity/MultiPart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/entity/OAuthCreds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/entity/Param.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/entity/RestAssuredResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/entity/SSLConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/template/BaseApiEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/template/IServiceEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/restassured/utility/RequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/utils/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/utils/PropertiesLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ms/utils/TokenGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/prod_in_region.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/reporttemplates/reportTemplate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sample_emailable_report.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema/session_schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ms/dataproviders/SessionsDataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ms/dataproviders/StreamingDataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ms/helpers/SessionHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ms/helpers/StreamingHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ms/tests/RTMPStreamingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ms/tests/SessionsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ms/tests/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/streaming_data_invalid.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/streaming_data_valid.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HyH55v3XD1kJkmbSmx1ZgPqhy9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.HTML"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ms.models.session" />
+      <recent name="ms.helpers" />
+      <recent name="ms.tests" />
+      <recent name="ms.models" />
+      <recent name="ms.restassured.entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ms" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.RTMPStreamingTest">
+    <configuration name="RTMPStreamingTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Assignment100ms" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ms.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ms.tests" />
+      <option name="MAIN_CLASS_NAME" value="ms.tests.RTMPStreamingTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dapp_access_key=637e001fa502cf7fd9549119 -Dapp_secret=Ecn2YYTmC7eTZ1hz3pgG0csqKXMAvKq6F2Lku3khCKkuMORqrqEt74kaJsrjOn3NJVTfCSxRaO5hHpCju29cY68tq5U14uGcUWtOuOAY-0vIz_9q7tEdmmFxy-XhyfN6qZ4qPosCXsiu1jV6R6oMlK4kY-xZ714GlZOOavB2Noo=" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RTMPStreamingTest.verifyStreamingApiValidCases" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Assignment100ms" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ms.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ms.tests" />
+      <option name="MAIN_CLASS_NAME" value="ms.tests.RTMPStreamingTest" />
+      <option name="METHOD_NAME" value="verifyStreamingApiValidCases" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Dapp_access_key=637e001fa502cf7fd9549119 -Dapp_secret=Ecn2YYTmC7eTZ1hz3pgG0csqKXMAvKq6F2Lku3khCKkuMORqrqEt74kaJsrjOn3NJVTfCSxRaO5hHpCju29cY68tq5U14uGcUWtOuOAY-0vIz_9q7tEdmmFxy-XhyfN6qZ4qPosCXsiu1jV6R6oMlK4kY-xZ714GlZOOavB2Noo=" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Assignment100ms" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ms.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ms.tests" />
+      <option name="MAIN_CLASS_NAME" value="ms.tests.SessionsTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dapp_access_key=637e001fa502cf7fd9549119 -Dapp_secret=Ecn2YYTmC7eTZ1hz3pgG0csqKXMAvKq6F2Lku3khCKkuMORqrqEt74kaJsrjOn3NJVTfCSxRaO5hHpCju29cY68tq5U14uGcUWtOuOAY-0vIz_9q7tEdmmFxy-XhyfN6qZ4qPosCXsiu1jV6R6oMlK4kY-xZ714GlZOOavB2Noo=" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionsTest.validateRetrieveSessionById" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Assignment100ms" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ms.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ms.tests" />
+      <option name="MAIN_CLASS_NAME" value="ms.tests.SessionsTest" />
+      <option name="METHOD_NAME" value="validateRetrieveSessionById" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Dapp_access_key=637e001fa502cf7fd9549119 -Dapp_secret=Ecn2YYTmC7eTZ1hz3pgG0csqKXMAvKq6F2Lku3khCKkuMORqrqEt74kaJsrjOn3NJVTfCSxRaO5hHpCju29cY68tq5U14uGcUWtOuOAY-0vIz_9q7tEdmmFxy-XhyfN6qZ4qPosCXsiu1jV6R6oMlK4kY-xZ714GlZOOavB2Noo=" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionsTest.validateRetrieveSessionByIdForInvalidSessionId" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Assignment100ms" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ms.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ms.tests" />
+      <option name="MAIN_CLASS_NAME" value="ms.tests.SessionsTest" />
+      <option name="METHOD_NAME" value="validateRetrieveSessionByIdForInvalidSessionId" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Dapp_access_key=637e001fa502cf7fd9549119 -Dapp_secret=Ecn2YYTmC7eTZ1hz3pgG0csqKXMAvKq6F2Lku3khCKkuMORqrqEt74kaJsrjOn3NJVTfCSxRaO5hHpCju29cY68tq5U14uGcUWtOuOAY-0vIz_9q7tEdmmFxy-XhyfN6qZ4qPosCXsiu1jV6R6oMlK4kY-xZ714GlZOOavB2Noo=" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionsTest.validateRetrieveSessionByIdForInvalidToken" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Assignment100ms" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ms.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ms.tests" />
+      <option name="MAIN_CLASS_NAME" value="ms.tests.SessionsTest" />
+      <option name="METHOD_NAME" value="validateRetrieveSessionByIdForInvalidToken" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Dapp_access_key=637e001fa502cf7fd9549119 -Dapp_secret=Ecn2YYTmC7eTZ1hz3pgG0csqKXMAvKq6F2Lku3khCKkuMORqrqEt74kaJsrjOn3NJVTfCSxRaO5hHpCju29cY68tq5U14uGcUWtOuOAY-0vIz_9q7tEdmmFxy-XhyfN6qZ4qPosCXsiu1jV6R6oMlK4kY-xZ714GlZOOavB2Noo=" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.SessionsTest" />
+      <item itemvalue="TestNG.SessionsTest.validateRetrieveSessionByIdForInvalidSessionId" />
+      <item itemvalue="TestNG.SessionsTest.validateRetrieveSessionByIdForInvalidToken" />
+      <item itemvalue="TestNG.SessionsTest.validateRetrieveSessionById" />
+      <item itemvalue="TestNG.RTMPStreamingTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.RTMPStreamingTest" />
+        <item itemvalue="TestNG.SessionsTest" />
+        <item itemvalue="TestNG.SessionsTest.validateRetrieveSessionByIdForInvalidSessionId" />
+        <item itemvalue="TestNG.SessionsTest.validateRetrieveSessionByIdForInvalidToken" />
+        <item itemvalue="TestNG.SessionsTest.validateRetrieveSessionById" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3799300-5365-45cf-9f68-64a19ecb046f" name="Changes" comment="" />
+      <created>1669250219887</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669250219887</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ms/helpers/SessionHelper.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ms/tests/SessionsTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ms/listeners/EmailReportListener.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/sun/mail/jakarta.mail/2.0.1/jakarta.mail-2.0.1-sources.jar!/jakarta/mail/internet/MimeBodyPart.java</url>
+          <line>1326</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ms/listeners/EmailReportListener.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ms/listeners/EmailReportListener.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

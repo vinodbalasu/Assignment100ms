@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="100ms Tests" verbose="1" parallel="false" preserve-order="true" group-by-instances="true">
+    <listeners>
+        <listener class-name="ms.listeners.EmailReportListener"></listener>
+    </listeners>
+    <test name="Streaming/Session Tests">
+        <classes>
+            <class name="ms.tests.RTMPStreamingTest"></class>
+            <class name="ms.tests.SessionsTest"></class>
+        </classes>
+    </test>
+</suite>

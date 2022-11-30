@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "room_id": {
+      "type": "string"
+    },
+    "customer_id": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "peers": {
+      "type": "object",
+      "properties": {
+        "c05ddf39-9bbf-41cc-bdd4-327db713a08a": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "session_id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "user": {
+              "type": "string"
+            },
+            "joined_at": {
+              "type": "string"
+            },
+            "left_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "session_id",
+            "name",
+            "role",
+            "user",
+            "joined_at",
+            "left_at"
+          ]
+        }
+      },
+      "required": [
+        "c05ddf39-9bbf-41cc-bdd4-327db713a08a"
+      ]
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "room_id",
+    "customer_id",
+    "active",
+    "peers",
+    "created_at",
+    "updated_at"
+  ]
+}

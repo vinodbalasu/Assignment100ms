@@ -1,0 +1,84 @@
+[
+  {
+    "test_name" : "verify streaming api to start streaming and recording and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record": true,
+        "rtmp_urls": [""],
+        "resolution" : {"width": 1280, "height": 720}
+      },
+      "response" : {
+        "response_message" : "Beam started for room",
+        "statusCode" : 200
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "Beam stopped for room",
+        "statusCode" : 200
+      }
+    }
+  },
+
+  {
+    "test_name" : "verify streaming api to start streaming/recording with only required parameter and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "record" : true
+      },
+      "response" : {
+        "response_message" : "Beam started for room",
+        "statusCode" : 200
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "Beam stopped for room",
+        "statusCode" : 200
+      }
+    }
+  },
+
+
+
+  {
+    "test_name" : "verify streaming api to start streaming with rtmp urls set and later stop the same",
+    "start_streaming" : {
+      "body" : {
+        "operation": "start",
+        "room_id": "valid",
+        "meeting_url": "valid",
+        "rtmp_urls": [""],
+        "resolution" : {"width": 1280, "height": 720}
+      },
+      "response" : {
+        "response_message" : "Beam started for room",
+        "statusCode" : 200
+      }
+    },
+    "stop_streaming" : {
+      "body" : {
+        "operation": "stop",
+        "room_id": "valid"
+      },
+      "response" : {
+        "response_message" : "Beam stopped for room",
+        "statusCode" : 200
+      }
+    }
+  }
+]
